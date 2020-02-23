@@ -23,29 +23,4 @@ namespace step4.generics
             //Printer<int> printer1 = new Printer<int>();
         }
     }
-    class Document
-    {
-        public string Name { get; set; }
-        public  virtual string GetString()
-        {
-            return Name;
-        }
-    }
-    class Book : Document
-    {
-        public string ISBN { get; set; }
-        public override string GetString()
-        {
-            return $"Your Document {Name} , ISBN : {ISBN}";
-        }
-    }
-    class NewsPaper : Document
-    {
-        public string RelaseDate { get; set; }
-        public override string GetString()
-        {
-            return $"Your Document {Name} , relaseDate : {RelaseDate}";
-            
-        }
-    }
 }
